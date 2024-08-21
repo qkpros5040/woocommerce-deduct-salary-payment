@@ -91,7 +91,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     add_action( 'plugins_loaded', 'deduct_salary_payment_gateway_init', 11 );
 
 
-    add_filter( 'woocommerce_available_payment_gateways', 'auto_select_deduct_salary_gateway' );
+    // add_filter( 'woocommerce_available_payment_gateways', 'auto_select_deduct_salary_gateway' );
     function auto_select_deduct_salary_gateway( $available_gateways ) {
         if ( is_checkout() && ! is_wc_endpoint_url( 'order-pay' ) ) {
             if ( isset( $available_gateways['deduct_salary_gateway'] ) ) {
