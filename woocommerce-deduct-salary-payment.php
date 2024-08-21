@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Deduct Salary Payment Gateway
 Description: A custom payment gateway that deducts the order amount from the customer's salary.
 Version: 1.0
-Author: Your Name
+Author: Your PF Communications
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
